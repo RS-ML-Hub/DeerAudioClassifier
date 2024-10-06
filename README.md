@@ -11,7 +11,7 @@ The Ensemble approach operates through majority voting. For each audio clip, the
 
 ## Key Features:
 - **Anomaly Detection:** Automatically identifies potential deer sounds from at least three syncoronized hourly recordings, minimizing manual processing.
-- **Deep Learning Classification:** Utilizes ResNet50, MobileNetV2, and EfficientNet-B2 models to classify audio clips as "deer" or "non-deer".
+- **Deep Learning Classification:** Utilizes ResNet50, MobileNetV2, and EfficientNet-B2 models to classify audio clips as "deer" or `non-deer`.
 - **Ensemble Approach:** Combines predictions from all three models using a majority voting scheme to determine the final label.
 
 
@@ -61,7 +61,8 @@ Sample Classification Results
 | 221011_10pm   | DeerSoundNo8_POI1_20221011_22_S409.9_E416.4_D6.5.wav            | 0        | 0               | 0            | 0       |
 | 221011_10pm   | DeerSoundNo8_POI5_20221011_22_S409.9_E416.4_D6.5.wav            | 1        | 1               | 1            | 1       |
 
-
+## Training Dataset
+We added 3,842 sound clips of deer (1,151 clips) or non-deer (2,691 clips, including birdsongs, dogs barking, and moving vehicles) that used to train the model. 
 
 ## Folder Structure
 The directory structure is as follows:
@@ -87,6 +88,16 @@ DeerAudioClassifier/
 │   │   ├── Potential_Deer_Clips/   # Output directory for potential deer clips
 │   │   ├── 221011_01am_DNN.csv/    # Output CSV with deer clips classification
 └── README.md                       # Project documentation
+└── Training_Dataset                # Training dataset of 3,842 clips for "deer" and "non-deer" classes
+│   ├── Deer/                       # Deer Dataset of 1,151 clips
+│   │   ├── Deer_0001_20190926.wav
+│   │   ├── ......
+│   │   ├── ......
+│   ├── NonDeer/                    # Non-deer Dataset of 2,691 clips
+│   │   ├── NonDeer_0001_20190901.wav
+│   │   ├── ......
+│   │   ├── ......
+
 ```
 
 ## Citation
