@@ -75,18 +75,16 @@ DeerAudioClassifier/
 ├── environment.yml                 # Conda environment configuration file
 ├── Models_Weight/                  # Pre-trained model weights
 ├── Recordings/                     # Directory for input audio recordings
-│   ├── 221011_10pm/
+│   ├── 221011_10pm/                # Full processed Hourly data
 │   │   ├── POI1_221011_10pm.mp3
 │   │   ├── POI2_221011_10pm.mp3
 │   │   ├── POI3_221011_10pm.mp3
 │   │   ├── Potential_Deer_Clips/   # Output directory for potential deer clips
 │   │   ├── 221011_10pm_DNN.csv/    # Output CSV with deer clips classification
-│   └── 221011_04am/
+│   └── 221011_04am/                # Only Hourly data for practice 
 │   │   ├── POI1_221011_01am.mp3
 │   │   ├── POI2_221011_01am.mp3
 │   │   ├── POI3_221011_01am.mp3
-│   │   ├── Potential_Deer_Clips/   # Output directory for potential deer clips
-│   │   ├── 221011_01am_DNN.csv/    # Output CSV with deer clips classification
 └── README.md                       # Project documentation
 └── Training_Dataset                # Training dataset of 3,842 clips for "deer" and "non-deer" classes
 │   ├── Deer/                       # Deer Dataset of 1,151 clips
