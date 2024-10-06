@@ -1,0 +1,4 @@
+model_name,model_weight,fc_num1,optimizer
+resnet50,epoch=4-step=360.ckpt,2048,SGD
+efficientnet-b2,epoch=3-step=288.ckpt,1408,Adam
+mobilenet_v2,epoch=29-step=2160.ckpt,1280,Adam
