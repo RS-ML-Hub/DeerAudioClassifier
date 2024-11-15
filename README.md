@@ -2,7 +2,7 @@
 
 **DeerAudioClassifier** is a tool designed for the automatic detection and classification of deer sounds using synchronized multi-microphone recordings. The project implements anomaly detection and deep learning classification models to identify potential deer calls from large sets of audio recordings, significantly reducing the manual investigation required.
 
-This project is associated with the research paper ***Ensemble Deep Learning and Anomaly Detection Framework for Automatic Audio Classification: Insights into Deer Vocalizations*** published in ***Ecological Informatics*** with the DOI: ***[XXXXXX](#)***. 
+This project is associated with the research paper ***Ensemble Deep Learning and Anomaly Detection Framework for Automatic Audio Classification: Insights into Deer Vocalizations*** published in ***Ecological Informatics*** with the DOI: ***[https://doi.org/10.1016/j.ecoinf.2024.102883](https://doi.org/10.1016/j.ecoinf.2024.102883)***. 
 
 The tool utilizes anomaly detection to filter out potential deer sound clips, allowing researchers to focus on a smaller subset of relevant audio data. Subsequently, the tool classifies these clips using three deep learning models: **ResNet50**, **MobileNetV2**, and **EfficientNet-B2**, as well as an **Ensemble approach** for improved accuracy.
 
